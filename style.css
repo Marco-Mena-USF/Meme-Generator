@@ -24,9 +24,27 @@ body {
    /* Stylings grabbed from https://codepen.io/MetalEscape/pen/WrYxVM */
 
   .meme .text {
+    font-family: impact;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 2px 5px #000;
+  }
+  
+  .meme .top-text {
+    top: -10px;
     position: absolute; 
     left: 100px;
-    bottom: 0px;
+    bottom: -10px;
     right: 0; 
     margin: 10px 0;
     padding: 0 2px;
@@ -46,16 +64,13 @@ body {
     2px 2px 5px #000;
   }
   
-  .meme .top-text {
-    top: 30px;
-  }
-  
    /* Stylings grabbed from https://codepen.io/MetalEscape/pen/WrYxVM */
 
   .meme .bottom-text {
-    position: absolute; 
-    left: 1;
-    right: 0; 
+    position: inherit;
+    left: 100px;
+    top: -75px;
+    right: 100px; 
     margin: 15px 0;
     padding: 0 5px;
     font-family: impact;
